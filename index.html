@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body{
+      background-color:hsl(217, 54%, 11%);
+      
+      
+    }
+    .cardcontainer{
+     
+     display: flex;
+     justify-content: center;
+      margin:0 auto;
+      position: relative;
+    }
+    .cardImage{
+      max-width: 20%;
+      position: relative;
+      padding:1rem;
+      background-color:hsl(216, 50%, 16%);
+      border-radius: 6px;
+      margin-top: 4rem;
+      margin-bottom: 4rem;
+    }
+    .newCard{
+      width:100%;
+      /* height:100%; */
+    }
+    .diamondImage{
+      width:100%;
+      height:50%;
+      border-radius: 4px;
+    }
+    .newCard:hover .overlay{
+      opacity: 0.4;
+      cursor: pointer;
+    }
+    .cardImage h6{
+      color: hsl(0, 0%, 100%);
+      font-size: 18px;
+      font-family: "Outfit",sans-serif;
+      margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    }
+     h6:hover{
+      cursor: pointer;
+      color:hsl(178, 100%, 50%);
+    }
+    .cardImage p{
+      font-weight: 300;
+      color: hsl(215, 51%, 70%);;
+      font-size: 14px;
+      font-family: "Outfit",sans-serif;
+    }
+    .symbol{
+       display: flex;
+       flex-direction: row;
+    }
+    .icon_etherium{
+      
+      display: flex;
+      flex-direction: row;
+    }
+    .icon_etherium span{
+      color:hsl(178, 100%, 50%);
+      font-size: 14px;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+    font-family: "Outfit",sans-serif;
+    font-weight: 600;
+    }
+    .icon_etherium img{
+      margin-top: 0.5rem;
+      width: 15%;
+    }
+    .clock{
+     
+      margin-left: 4rem;
+      display: flex;
+      flex-direction: row;
+    }
+    .clock span{
+      color: hsl(215, 51%, 70%);
+      font-size: 14px;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+    font-family: "Outfit",sans-serif;
+    }
+    .clock img{
+      margin-top: 0.7rem;
+      width: 14%;
+    }
+    hr{
+      border: 1px solid hsl(215, 32%, 27%);
+      
+    }
+    .bottom{
+      display: flex;
+      flex-direction: row;
+    }
+    .img_avatar{
+      border: 1px solid #fff;
+    border-radius: 65%;
+    width: 30px;
+    height: 32px
+    }
+    .img_avatar img{
+      margin-top: 0rem;
+    width: 100%;
+    height: 100%;
+    }
+    .creator{
+      margin-left: 2rem;
+    }
+    .creator p{
+      margin-top: 0.5rem;
+    }
+    .creator span{
+      color:#fff
+      
+    }
+    .creator span:hover {
+      cursor: pointer;
+      color:hsl(178, 100%, 50%);
+      
+    }
+    .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* height: 100%;
+  width: 100%; */
+  border-radius: 4px;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: hsl(178, 100%, 50%);
+  margin-top: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 13rem;
+    margin-right: 1rem;
+}
+
+.icon {
+  color: hsl(0, 0%, 100%);
+  font-size: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+    .attribution { font-size: 11px; text-align: center; color: #fff; font-family: sans-serif; }
+    .attribution a { color: hsl(182, 70%, 52%); }
+  </style>
+</head>
+<body>
+  
+<div class="cardcontainer">
+
+  <div class="cardImage">
+    <div class="newCard">
+      <img src="images\image-equilibrium.jpg" alt="displayImage" class="diamondImage"/>
+      <div class="overlay">
+       <a href="#" class="icon" title="image Profile">
+         <img src="images\icon-view.svg"/>
+       </a>
+       </div>
+    </div>
+   
+   <h6>Equilibrium #3429</h6>
+   <p>Our Equilibrium collection promotes balance and calm.</p>
+   <div class="symbol">
+     <div class="icon_etherium"> <img src="images\icon-ethereum.svg"/><span>0.014ETH</span></div>
+     <div class="clock"><img src="images\icon-clock.svg"/><span>3 Days Left</span></div>
+   </div>
+   
+    <hr />
+    <div class="bottom">
+      <div class="img_avatar">
+      <img src="images\image-avatar.png" alt="person"/>
+      </div>
+      <div class="creator"><p>Creation of <span>Jules Wuyvern</span></p></div>
+    </div>
+   
+   
+  </div>
+</div>
+
+  
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/sansavvy">Santhana Lakshmi S</a>.
+  </div>
+</body>
+</html>
